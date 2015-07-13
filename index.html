@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tree for EG</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script src="js/templates.js"></script>
+	<script src="js/cookies.js"></script>
+	<script src="js/model.js"></script>
+	<script src="js/view.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Tree</h1>
+		</div>
+		<ul class="box main">
+		</ul>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted"><span class="copyleft">&copy;</span> 2015<span id="year"></span> Oleg Skalov</p>
+			<script>
+				var currentYear = new Date().getFullYear();
+
+				if (currentYear != 2015) {
+					document.getElementById('year').innerHTML = '&ndash;' + currentYear;
+				}
+			</script>
+		</div>
+	</footer>
+</body>
+</html>
+
+
