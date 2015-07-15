@@ -1,4 +1,4 @@
-describe("Player", function() {
+describe("Model", function() {
 	var model;
 	var element_id;
 	var node_count;
