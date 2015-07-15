@@ -68,7 +68,7 @@ Model.prototype.addNode = function (elementId) {
 	};
 };
 
-Model.prototype.countChildren = function (elementId) {
+Model.prototype.countChildrenForParent = function (elementId) {
 	this._searchNode(this.tree, elementId, true);
 
 	if (!this._foundNode) {

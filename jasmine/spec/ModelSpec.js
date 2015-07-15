@@ -29,6 +29,6 @@ describe("Model", function() {
 	});
 
 	it("should return count children for node", function() {
-		expect(model.countChildren(element_id)).toEqual(count_children);
+		expect(model.countChildrenForParent(element_id)).toEqual(count_children);
 	});
 });

@@ -72,7 +72,7 @@ View.prototype.addNode = function (element, newNode) {
 View.prototype.removeNode = function (element) {
 	obj = element.closest('li');
 
-	if (this.model.countChildren(element.closest('li').attr('id')) == 1) {
+	if (this.model.countChildrenForParent(element.closest('li').attr('id')) == 1) {
 		var parent = obj.parents('li')[0];
 
 		$(parent)
