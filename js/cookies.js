@@ -16,7 +16,7 @@ Utils.setCookie = function (name, value) {
 };
 
 Utils.getCookie = function (name) {
-	var ret;
+	var ret = null;
 
 	try {
 		ret = window.localStorage.getItem(name);

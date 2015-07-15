@@ -21,15 +21,26 @@ body {
 	padding: 0 15px;
 }
 
+.container .text-muted {
+	margin: 20px 0;
+}
+
+.button-group {
+	text-align: right;
+	font-size: 20px;
+	padding: 10px 11px;
+}
+
 .box {
 	padding: 0;
 	margin: 0;
 }
 
 .box.main {
-	border-bottom: 1px solid #aaaaaa;
-	border-left: 1px solid #aaaaaa;
-	border-right: 1px solid #aaaaaa;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-radius: 5px;
 }
 
 .box li {
@@ -37,13 +48,17 @@ body {
 }
 
 .drawer {
-	border-top: 1px solid #999999;
+	color: #428bca;
+	border-top: 1px solid #cccccc;
 	zoom: 1;
+}
+
+.main > .drawer:first-child {
+	border-radius: 5px;
 }
 
 .content {
 	min-height: 18px;
-	margin-left: 18px;
 	padding: 10px;
 }
 
@@ -77,6 +92,7 @@ body {
 
 .content:hover .button-right {
 	display: block;
+	color: #333333;
 }
 
 .copyleft {
